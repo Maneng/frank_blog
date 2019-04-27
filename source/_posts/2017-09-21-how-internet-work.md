@@ -1,16 +1,14 @@
 ---
-layout: post
-title: 互联网是如何工作的？ 
-categories: Internet
-tags:  Internet 
-author: Marnner
-excerpt: 互联网是如何工作的？
-grammar_cjkRuby: true
+title: 互联网是如何工作的？
+categories:
+    - Internet
+tags:
+    - Internet
+    - net work
+data: 2017-09-21 18:38:00
+mp3: http://domain.com/awesome.mp3
+cover: http://domain.com/awesome.jpg
 ---
-
-
-* content
-{:toc}
 
 
 # 互联网是如何工作的？
@@ -48,10 +46,10 @@ grammar_cjkRuby: true
 假设你已经从家里拨出了ISP，并且必须通过电话线传送信息。因此，消息必须从字母文本转换为电子信号，通过互联网传输，然后翻译成字母文本。这是如何实现的？通过使用协议栈。每台电脑都需要在互联网上进行通信，通常内置在计算机的操作系统（即Windows，Unix等）中。由于使用了两种主要的通信协议，Internet上使用的协议栈被称为TCP / IP协议栈。 TCP / IP堆栈如下所示：
 
 
-| 协议层 | 注释 | 
+| 协议层 | 注释 |
 | ------| ------ |
-| 应用协议层| 特定于WWW，电子邮件，FTP等应用程序的协议 | 
-| 传输控制协议层 | TCP使用端口号将数据包指向计算机上的特定应用程序。 | 
+| 应用协议层| 特定于WWW，电子邮件，FTP等应用程序的协议 |
+| 传输控制协议层 | TCP使用端口号将数据包指向计算机上的特定应用程序。 |
 |互联网协议层|IP使用IP地址将数据包引导到特定的计算机|
 |硬件层|将二进制数据包转换为网络信号并返回。 （例如以太网网卡，电话线路调制解调器等）|
 
@@ -202,9 +200,9 @@ This SMTP example shows mail sent by Smith at host USC-ISIF, to
       host USC-ISIF contacts host BBN-UNIX directly.  The mail is
       accepted for Jones and Brown.  Green does not have a mailbox at
       host BBN-UNIX.
-      
-      
-      
+
+
+
 ---------------------------------------------------------------------------------
 
 ```
@@ -234,17 +232,17 @@ This SMTP example shows mail sent by Smith at host USC-ISIF, to
          S: QUIT
          R: 221 BBN-UNIX.ARPA Service closing transmission channel
    ```
-   
-   
+
+
    此SMTP事务取自指定SMTP的RFC 821。
-   
-   
+
+
 ## 传输控制协议 Transmission Control Protocol
 
 
 在应用层下的协议栈是TCP层。当应用程序打开与Internet上的另一台计算机的连接时，他们发送的消息（使用特定的应用层协议）将堆栈传递到TCP层。 TCP负责将应用程序协议路由到目标计算机上的正确应用程序。为此，使用端口号。端口可以​​被认为是每台计算机上的独立通道。例如，您可以在阅读电子邮件时上网。这是因为这两个应用程序（Web浏览器和邮件客户端）使用不同的端口号。当一个数据包到达计算机并使协议栈出现时，TCP层根据一个端口号决定哪个应用接收数据包。
-   
-   
+
+
 TCP工作原理如下：
 
 - 当TCP层从上面接收到应用层协议数据时，将其分段为可管理的“块”，然后向每个“块”添加具有特定TCP信息的TCP报头。包含在TCP报头中的信息包括需要发送数据的应用程序的端口号。
