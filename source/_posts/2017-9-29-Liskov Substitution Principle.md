@@ -2,14 +2,12 @@
 layout: post
 title: 里氏代换原则
 categories: OOP
-tags:  SOLID 
+tags:  SOLID
 author: Marnner
 excerpt: Liskov Substitution Principle
 grammar_cjkRuby: true
 ---
 
-* content
-{:toc}
 
 
 
@@ -51,7 +49,7 @@ class TrasportationDevice
    double speed;
    double getSpeed() { ... }
    void setSpeed(double d) { ... }
-   
+
    Engine engine;
    Engine getEngine() { ... }
    void setEngine(Engine e) { ... }
@@ -95,7 +93,7 @@ class TrasportationDevice
    String name;
    String getName() { ... }
    void setName(String n) { ... }
- 
+
    double speed;
    double getSpeed() { ... }
    void setSpeed(double d) { ... }
@@ -118,7 +116,7 @@ class DevicesWithEngines extends TransportationDevice
    Engine engine;
    Engine getEngine() { ... }
    void setEngine(Engine e) { ... }
- 
+
    void startEngine() { ... }
 }
 ```

@@ -2,14 +2,11 @@
 layout: post
 title: primitive-data-type-in-java
 categories: Java Basic
-tags:  java 
+tags:  java
 author: Marnner
 excerpt: Primitive Data Types in Java
 grammar_cjkRuby: true
 ---
-
-* content
-{:toc}
 
 ## 介绍
 
@@ -21,16 +18,16 @@ Java支持八种基本数据类型。原始数据类型由语言预定义并由�
 
 
   [1]: https://howtodoinjava.com/wp-content/uploads/2015/05/Primitive-data-types-in-java.jpg
-  
+
   ## Integral Data Types
-  
+
   整数数据类型是数值型数据类型，其值为整数。Java提供了5个完整的数据类型:`byte, short, int, long, and char`。让我们简短地了解一下其中的每一个。
-  
+
   1） int
   int数据类型是一个32位签名的Java原始数据类型。int数据类型的变量需要32位内存。
-  
+
   int数据类型是32位签名的Java原语数据类型。 int数据类型的变量占用32位内存。其有效范围为-2,147,483,648至2,147,483,647（-2的31次方至2的31次方- 1）。该范围内的所有整数称为整数文字（或整数常量）。例如，10，-200，0，30，19等是int的整数字面量。一个整型文字可以分配给一个int变量，比如说num1，像这样：
-  
+
   > int num = 21;
 
 Java有一个名为Integer的类，它定义了两个常量，以表示int数据类型的最大值和最小值。MAX_VALUE Integer.MIN_VALUE。例如，
@@ -54,7 +51,7 @@ long mum3 = -3556L;
 ``` java
 int num1 = 5;
 long num2 = 25L;
-  
+
 // A compile-time error. Even if num2's value 25 which is within the range of int.
 num1 = num2;
 ```

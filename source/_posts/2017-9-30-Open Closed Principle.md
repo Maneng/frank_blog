@@ -2,14 +2,12 @@
 layout: post
 title: 开闭原则
 categories: OOP
-tags:  SOLID 
+tags:  SOLID
 author: Marnner
 excerpt: Open Closed Principle
 grammar_cjkRuby: true
 ---
 
-* content
-{:toc}
 
 
 # Open Closed Principle
@@ -202,5 +200,3 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in g
 ### Summary
 
 大多数时候，软件实体的真正关闭实际上是不可能的，因为总是有机会改变会违反关闭。例如，在我们的保险范例中，处理特定类型的索赔的业务规则的变化将需要修改ClaimApprovalManager类。因此，在企业应用程序开发过程中，即使您不一定总是在每个方面都编写符合Open Closed原则的代码，因此随着应用程序的发展，采取步骤将是有益的。
-
-

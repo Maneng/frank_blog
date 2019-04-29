@@ -1,17 +1,12 @@
 ---
 layout: post
-title: springframework 有关的面试问题 
+title: springframework 有关的面试问题
 categories: Spring
-tags:  springframework 
+tags:  springframework
 author: Marnner
 excerpt: springframework 有关的面试问题
 grammar_cjkRuby: true
 ---
-
-
-* content
-{:toc}
-
 
 
 # springframework 有关的面试问题
@@ -109,14 +104,14 @@ Spring Bean是由Spring IoC容器初始化的Java对象。
 
 
   [1]: http://www.baeldung.com/wp-content/uploads/2017/06/Spring-Bean-Life-Cycle.jpg
-  
-  
+
+
   **Q13. What is the Spring Java-Based Configuration?**
-  
+
   它是以类型安全的方式配置基于Spring的应用程序的方法之一。这是基于XML的配置的替代方法。
-  
+
   **Q14. Can we have multiple Spring configuration files in one project?**
-  
+
   是的，在大型项目中，建议使用多个Spring配置来提高可维护性和模块性。
   您可以加载多个基于Java的配置文件:
 
@@ -178,7 +173,7 @@ Spring Boot是一个项目，它提供了一组预先配置的框架，以减少
 ``` java
 @Autowired
 ServletContext servletContext;
- 
+
 @Autowired
 ServletConfig servletConfig;
 ```
@@ -193,7 +188,7 @@ ServletConfig servletConfig;
 ``` java
 public class Person {
     private String name;
-  
+
     @Required
     public void setName(String name) {
         this.name = name;
@@ -312,7 +307,7 @@ public class SpringJdbcConfig {
         dataSource.setUrl("jdbc:mysql://localhost:3306/springjdbc");
         dataSource.setUsername("guest_user");
         dataSource.setPassword("guest_password");
-  
+
         return dataSource;
     }
 }

@@ -2,14 +2,11 @@
 layout: post
 title: 图解HTTP协议笔记之TCP/IP
 categories: Internet
-tags:  TCP/IP 
+tags:  TCP/IP
 author: Marnner
 excerpt: 图解HTTP协议笔记之TCP/IP
 grammar_cjkRuby: true
 ---
-
-* content
-{:toc}
 
 
 - # 图解HTTP协议笔记

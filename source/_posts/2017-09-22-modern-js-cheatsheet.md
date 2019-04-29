@@ -1,16 +1,12 @@
 ---
 layout: post
-title: Modern JavaScript 参考手册 
+title: Modern JavaScript 参考手册
 categories: JavaScript
 tags:  es6
 author: Marnner
-excerpt: Modern JavaScript 参考手册 
+excerpt: Modern JavaScript 参考手册
 grammar_cjkRuby: true
 ---
-
-
-* content
-{:toc}
 
 
 
@@ -1077,7 +1073,7 @@ console.log(exp) // 2.7
 // -------------
 
 // mySecondFile.js
-import * as constants from './mathConstants.js'; // Inject all exported values into constants variable 
+import * as constants from './mathConstants.js'; // Inject all exported values into constants variable
 console.log(constants.pi) // 3.14
 console.log(constants.exp) // 2.7
 ```

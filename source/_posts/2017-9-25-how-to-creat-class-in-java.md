@@ -2,14 +2,11 @@
 layout: post
 title: how-to-creat-class-in-java
 categories: Java Basic
-tags:  java 
+tags:  java
 author: Marnner
 excerpt: how-to-creat-class-in-java
 grammar_cjkRuby: true
 ---
-
-* content
-{:toc}
 
 # How to create a class in Java?
 
@@ -80,9 +77,9 @@ class Human {
 
 ``` java
 <<Class>> <<variable>> = new <<Call to Class Constructor>>;
- 
+
 //e.g.
- 
+
 Human h = new Human();
 ```
 当您不向类添加构造函数时，Java编译器会为您添加一个构造函数。由Java编译器添加的构造函数称为默认构造函数。默认构造函数不接受参数。类的构造函数的名称与类名相同。新的操作符后面是一个调用该类的构造函数的调用，它的实例正在被创建。新操作符通过在堆上分配内存来创建一个类的实例。
@@ -148,5 +145,3 @@ static {
 ```
 
 静态初始化器不能抛出已检查的异常，也不能有返回语句。
-
-

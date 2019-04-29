@@ -2,14 +2,12 @@
 layout: post
 title: 接口隔离原则
 categories: OOP
-tags:  SOLID 
+tags:  SOLID
 author: Marnner
 excerpt: Interface Segregation Principle
 grammar_cjkRuby: true
 ---
 
-* content
-{:toc}
 
 # Interface Segregation Principle
 

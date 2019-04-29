@@ -2,14 +2,12 @@
 layout: post
 title: 单一职责原则
 categories: OOP
-tags:  SOLID 
+tags:  SOLID
 author: Marnner
 excerpt: Single Responsibility Principle
 grammar_cjkRuby: true
 ---
 
-* content
-{:toc}
 
 
 # Single Responsibility Principle

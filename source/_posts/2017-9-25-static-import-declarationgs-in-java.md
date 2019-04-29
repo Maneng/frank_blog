@@ -2,14 +2,12 @@
 layout: post
 title: static-import-declarationgs-in-java
 categories: Java Basic
-tags:  java 
+tags:  java
 author: Marnner
 excerpt: static-import-declarationgs-in-java
 grammar_cjkRuby: true
 ---
 
-* content
-{:toc}
 
 
 ## 简介
@@ -21,11 +19,11 @@ grammar_cjkRuby: true
 
 ``` java
 //Single-static-import declaration:
- 
+
 import static <<package name>>.<<type name>>.<<static member name>>;
- 
+
 //Static-import-on-demand declaration:
- 
+
 import static <<package name>>.<<type name>>.*;
 ```
 
@@ -50,7 +48,7 @@ import static <<package name>>.<<type name>>.*;
 ``` java
 import static package1.Class1.methodA; // Imports Class1.methodA() method
 import static package2.Class2.*;  // Imports Class2.methodA() method too
-  
+
 public class Test {
         public static void main(String[] args) {
                 methodA();   // Class1.methodA() will be called
@@ -67,30 +65,30 @@ import static package1.Class2.methodA; // An error
 ``` java
 // A.java
 package package1;
-  
+
 public class A {
         public static void test() {
                 System.out.println("package1.A.test()");
         }
 }
-  
+
 // Test.java
 package package2;
-  
+
 import static package1.A.test;
-  
+
 public class Test {
         public static void main(String[] args) {
                 test(); // Will use package2.Test.test() method, not package1.A.test() method
         }
-  
+
         public static void test() {
                 System.out.println("package2.Test.test()");
         }
 }
- 
+
 Output:
- 
+
 package2.Test.test()
 ```
 

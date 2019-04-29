@@ -2,14 +2,12 @@
 layout: post
 title: 依赖倒转原则
 categories: OOP
-tags:  SOLID 
+tags:  SOLID
 author: Marnner
 excerpt: Dependency Inversion Principle
 grammar_cjkRuby: true
 ---
 
-* content
-{:toc}
 
 # Dependency Inversion Principle
 
@@ -224,5 +222,3 @@ public class ElectricPowerSwitchTest {
 ## 依赖性反转原则和Spring框架
 
 您可能认为依赖性反转原则与依赖注入有关，因为它适用于Spring Framework，您将是正确的。鲍勃·马丁叔叔在马丁·福勒（Martin Fowler）创造了“依赖注入”（Dependency Injection）术语的基础上，提出了依赖性反转概念。这两个概念是高度相关的。依赖性反转更侧重于代码的结构，其重点是保持代码松散耦合。另一方面，依赖注入是代码功能如何工作的方式。在使用Spring Framework进行编程时，Spring正在使用依赖注入来组合应用程序。依赖性反转是什么使您的代码解耦，因此Spring可以在运行时使用依赖注入。
-
-

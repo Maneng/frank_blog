@@ -2,15 +2,12 @@
 layout: post
 title: Java-System-Properties
 categories: Java Basic
-tags:  java 
+tags:  java
 author: Marnner
 excerpt: Java System Properties
 grammar_cjkRuby: true
 ---
 
-
-* content
-{:toc}
 
 
 ## 介绍
@@ -65,7 +62,7 @@ public class PrintSystemProperties
       // List all System properties
       Properties pros = System.getProperties();
       pros.list(System.out);
-  
+
       // Get a particular System property given its key
       // Return the property value or null
       System.out.println(System.getProperty("java.home"));
