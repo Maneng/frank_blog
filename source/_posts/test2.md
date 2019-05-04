@@ -1,5 +1,5 @@
 ---
-title: 写作的价值
+title: 写作的价值1
 categories:
     - 思考
 date: 2019-05-04 18:38:45
